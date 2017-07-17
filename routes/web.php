@@ -13,7 +13,4 @@
 
 Route::get('/install', 'ShopifyController@install');
 Route::get('/auth', 'ShopifyController@auth');
-
-Route::get('/walla', function () {
-  dd(getenv('APP_URL').getenv('SHOPIFY_REDIRECT_URI'));
-});
+Route::get('/home', 'ShopifyController@home');
